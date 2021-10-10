@@ -65,6 +65,8 @@ class Options implements OptionSourceInterface
             $currentOptions[$name]['value'] = $website->getId();
         }
 
+        $this->options = array_values($currentOptions);
+
         return $currentOptions;
     }
 }
